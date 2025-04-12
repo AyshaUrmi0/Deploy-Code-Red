@@ -1,21 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next",
-      "config": {
-        "distDir": ".next",
-        "maxLambdaSize": "50mb"
-      }
-    }
-  ],
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "ignoreCommand": "exit 0",
   "env": {
-    "NEXT_PUBLIC_BASE_URL": "https://code-red-deployment.vercel.app"
-  },
-  "build": {
-    "env": {
-      "NEXT_PUBLIC_BASE_URL": "https://code-red-deployment.vercel.app"
-    }
+    "NEXT_PUBLIC_BASE_URL": "https://deploy-code-red.vercel.app"
   }
 } 

@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-    serverActions: true,
-  },
   images: {
     domains: ['i.ibb.co'],
   },
@@ -13,10 +9,11 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Disable type checking during production build
-  distDir: process.env.NODE_ENV === 'production' ? '.next-prod' : '.next',
   swcMinify: true,
   reactStrictMode: false,
+  experimental: {
+    serverActions: true,
+  }
 }
 
 module.exports = nextConfig 
