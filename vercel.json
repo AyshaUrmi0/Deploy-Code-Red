@@ -6,6 +6,6 @@
   "installCommand": "npm install",
   "ignoreCommand": "exit 0",
   "env": {
-    "NEXT_PUBLIC_BASE_URL": "https://deploy-code-red.vercel.app"
+    "NEXT_PUBLIC_BASE_URL": "https://code-red-deployment-jf7mlewi5-nm-meherajs-projects.vercel.app"
   }
 } 
