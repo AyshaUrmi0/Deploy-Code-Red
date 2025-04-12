@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next",
+      "config": {
+        "distDir": ".next",
+        "maxLambdaSize": "50mb"
+      }
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_BASE_URL": "https://code-red-deployment.vercel.app"
+  },
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_BASE_URL": "https://code-red-deployment.vercel.app"
+    }
+  }
+} 
